@@ -1,0 +1,7 @@
+{
+  "name": "maffed-construction-site",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Maffed Construction website with approval workflow. No dependencies: run npm start.",
+  "scripts": { "start": "node server.js", "dev": "node server.js" }
+}

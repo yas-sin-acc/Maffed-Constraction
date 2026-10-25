@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company panel | Maffed Construction</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body{background:#eef3ec}.top{background:var(--g9);color:#fff;padding:16px 0}.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .box{background:#fff;border-radius:12px;padding:20px;margin:16px 0;box-shadow:0 4px 14px rgba(11,50,37,.1)}
+    .item{display:grid;grid-template-columns:200px 1fr;gap:16px}@media(max-width:700px){.item{grid-template-columns:1fr}}
+    .thumbs{display:grid;gap:6px}.thumbs img,.thumbs video{width:100%;max-height:150px;object-fit:cover;border-radius:6px}
+    .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:99px;background:var(--g1);color:var(--g7)}
+    .tag.pending{background:#fff1c9;color:#7a5a00}.tag.rejected{background:#fde0e0;color:#a11}.tag.approved{background:#d6f5df;color:#0a6b2c}
+    .contactbox{background:#f6f2e9;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:.9rem}
+    .btn.red{background:#d33;color:#fff}.btn.green{background:#1f8a5b;color:#fff}.btn.sm{padding:8px 14px;font-size:.85rem}
+    .pre{white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <div id="login" class="wrap" style="max-width:420px;padding-top:80px">
+    <form class="box form" id="lf" style="grid-template-columns:1fr">
+      <h2 style="font-size:1.6rem">Company panel</h2>
+      <label>Admin password<input type="password" id="key" required autofocus></label>
+      <button class="btn">Log in</button><p class="ok" id="lerr" style="color:#c00" hidden></p>
+      <p class="admin-note">Set your own password with the ADMIN_KEY setting (see README).</p>
+    </form>
+  </div>
+  <div id="panel" hidden>
+    <div class="top"><div class="wrap"><b style="font-size:1.2rem">Maffed Construction: company panel</b><span><a href="/" class="btn out sm">View website</a> <button class="btn out sm" id="out">Log out</button></span></div></div>
+    <div class="wrap"><div class="tabs" id="tabs"></div><div id="view"></div></div>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

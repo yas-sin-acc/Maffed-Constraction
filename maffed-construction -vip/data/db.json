@@ -1,0 +1,36 @@
+{
+ "posts": [
+  {
+   "id": "488c1ca151ee",
+   "code": "B9ACBB84",
+   "kind": "rent",
+   "status": "pending",
+   "source": "customer",
+   "createdAt": 1792945778974,
+   "type": "bld",
+   "title": "kiray",
+   "location": "adis",
+   "area": "3",
+   "purpose": "office",
+   "price": "1000",
+   "details": "ok",
+   "criteria": "",
+   "deadline": "",
+   "year": "",
+   "stage": "",
+   "media": [
+    {
+     "type": "image",
+     "url": "/uploads/a82ac3f4647ab280.jpg",
+     "name": "photo_3_2026-10-08_10-48-49.jpg"
+    }
+   ],
+   "contact": {
+    "name": "yas",
+    "phone": "098877777",
+    "email": "yassinfedlu6690@gmail.com"
+   }
+  }
+ ],
+ "messages": []
+}
